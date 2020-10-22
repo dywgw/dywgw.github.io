@@ -17,7 +17,7 @@ tags:
 # **git revert** 和 **git reset** 的区别
  先看图：
  
-![](https://ww3.sinaimg.cn/large/006tNbRwgy1fcr9tu6vdjj30t30ez0y8.jpg)
+![img/2018-02-16/1.jpg](img/2018-02-16/1.jpg)
 
 **sourceTree** 中 **revert** 译为 **`提交回滚`** ，作用为忽略你指定的版本，然后提交一个新的版本。新的版本中已近删除了你所指定的版本。
 
@@ -31,10 +31,8 @@ tags:
 参数 `--hard` ，所有commit的修改直接丢弃
 
 	$ git reset --hard HEAD^        回退到上个版本
-	$ git reset --hard commit_id    退到/进到 指定commit_id
-推送到远程	
-
-	$ git push origin HEAD --force
+	$ git reset --hard commit_id    退到/进到 指定commit_id	
+	$ git push origin HEAD --force  推送到远程
 	
 #### 可以吃的后悔药->版本穿梭
 
@@ -44,7 +42,7 @@ tags:
 
 	$ git reflog
 	
-	输出：
+	输出:
 	c7edbfe HEAD@{0}: reset: moving to c7edbfefab1bdbef6cb60d2a7bb97aa80f022687
 	470e9c2 HEAD@{1}: reset: moving to 470e9c2
 	b45959e HEAD@{2}: revert: Revert "add img"
