@@ -17,7 +17,7 @@ tags:
 # **git revert** 和 **git reset** 的区别
  先看图：
  
-![img/2018-02-16/1.jpg](img/2018-02-16/1.jpg)
+![https://dywgw.github.io/img/2018-02-16/1.jpg](https://dywgw.github.io/img/2018-02-16/1.jpg)
 
 **sourceTree** 中 **revert** 译为 **`提交回滚`** ，作用为忽略你指定的版本，然后提交一个新的版本。新的版本中已近删除了你所指定的版本。
 
